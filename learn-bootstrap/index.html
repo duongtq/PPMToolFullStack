@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Bootstrap 4</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- TYPOGRAPHY -->
+        <h1>Bootstrap 4!</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            <u>tempor incididunt ut labore et dolore magna aliqua.</u>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat.
+        </p>
+        <p><del>Duis aute irure dolor in reprehenderit</del>
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.
+        </p>
+
+        <hr>
+
+        <!-- ALIGNMENT -->
+        <p class="text-left text-lowercase">Left-aligned text</p>
+        <p class="text-center text-uppercase">Center-aligned text</p>
+        <p class="text-right text-capitalize">Right-aligned text</p>
+        <p class="text-justify">Justified text</p>
+        <p class="text-nowrap">No wrap text</p>
+
+        <hr>
+
+        <!-- BLOCKQUOTES -->
+        <blockquote class="blockquote-reverse">
+            <p>In a world without gold, we might have been heroes.</p>
+            <footer class="blockquote-footer">Quote by <cite title="Tran Duong">Tran Duong</cite></footer>
+        </blockquote>
+
+        <hr>
+
+        <!-- LIST -->
+        <ul class="list-unstyled">
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+            <li>Item Four</li>
+        </ul>
+
+        <ul class="list-inline">
+            <li class="list-inline-item">Item One</li>
+            <li class="list-inline-item">Item Two</li>
+            <li class="list-inline-item">Item Three</li>
+            <li class="list-inline-item">Item Four</li>
+        </ul>
+
+        <!-- CONTEXTUAL COLORS -->
+        <p class="text-primary">PREDATOR</p>
+        <p class="text-success">PREDATOR</p>
+        <p class="text-info">PREDATOR</p>
+        <p class="text-warning">PREDATOR</p>
+        <p class="text-danger">PREDATOR</p>
+        <p class="text-muted">PREDATOR</p>
+
+        <p class="bg-primary">PREDATOR</p>
+        <p class="bg-success">PREDATOR</p>
+        <p class="bg-info">PREDATOR</p>
+        <p class="bg-warning">PREDATOR</p>
+        <p class="bg-danger">PREDATOR</p>
+        <p class="bg-muted">PREDATOR</p>
+    </div>
+
+    <hr>
+    <div class="container">
+        <button class="btn btn-default">Default</button>
+        <a class="btn btn-primary" href="">Link</a>
+        <button class="btn btn-default" type="text">Input</button>
+        <button class="btn btn-default btn-lg">Large</button>
+        <button class="btn btn-default">Large</button>
+        <button class="btn btn-default btn-sm">Large</button>
+        <button class="btn btn-default btn-xs">Large</button>
+    </div>
+
+    <!-- FORM -->
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label>Name</label>
+                <input class="form-control" type="text" placeholder="Add Name">
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input class="form-control" type="email" placeholder="Add Email">
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <input class="form-control" type="text" placeholder="Add Message">
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <select class="form-control">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Upload File</label>
+                <input class="form-control" type="file">
+            </div>
+
+            <button class="btn btn-warning" type="submit">Submit</button>
+        </form>
+
+        <form class="form-inline">
+            <div class="form-group">
+                <label>Name</label>
+                <input class="form-control" type="text" placeholder="Add Name">
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input class="form-control" type="email" placeholder="Add Email">
+            </div>
+
+            <div class="form-group">
+                <label>Remember me</label>
+                <input class="form-control" type="checkbox">
+            </div>
+
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+
+        <hr>
+
+        <!-- TABLE -->
+        <div class="container">
+            <table class="table table-striped table-bordered table-hover" border="1">
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                    <th>Header 4</th>
+                    <th>Header 5</th>
+                </tr>
+                <tr class="table-danger">
+                    <td>Row:1 Cell:1</td>
+                    <td>Row:1 Cell:2</td>
+                    <td>Row:1 Cell:3</td>
+                    <td>Row:1 Cell:4</td>
+                    <td>Row:1 Cell:5</td>
+                </tr>
+                <tr>
+                    <td>Row:2 Cell:1</td>
+                    <td>Row:2 Cell:2</td>
+                    <td>Row:2 Cell:3</td>
+                    <td>Row:2 Cell:4</td>
+                    <td>Row:2 Cell:5</td>
+                </tr>
+                <tr>
+                    <td>Row:3 Cell:1</td>
+                    <td>Row:3 Cell:2</td>
+                    <td>Row:3 Cell:3</td>
+                    <td>Row:3 Cell:4</td>
+                    <td>Row:3 Cell:5</td>
+                </tr>
+                <tr class="table-success">
+                    <td>Row:4 Cell:1</td>
+                    <td>Row:4 Cell:2</td>
+                    <td>Row:4 Cell:3</td>
+                    <td>Row:4 Cell:4</td>
+                    <td>Row:4 Cell:5</td>
+                </tr>
+                <tr>
+                    <td>Row:5 Cell:1</td>
+                    <td>Row:5 Cell:2</td>
+                    <td>Row:5 Cell:3</td>
+                    <td>Row:5 Cell:4</td>
+                    <td>Row:5 Cell:5</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- LIST GROUP -->
+        <div class="container">
+            <ul class="list-group">
+                <li class="list-group-item">Predator</li>
+                <li class="list-group-item">Alien</li>
+                <li class="list-group-item">Human</li>
+                <li class="list-group-item">Wolverine</li>
+            </ul>
+        </div>
+
+        <hr>
+        <div class="container">
+            <div class="list-group">
+                <a class="list-group-item" href="#">Item One</a>
+                <a class="list-group-item" href="#">Item Two</a>
+                <a class="list-group-item" href="#">Item Three</a>
+                <a class="list-group-item" href="#">Item Four</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- PANEL HEADING -->
+        <div class="container">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="panel-title">XYZ</h4>
+                </div>
+                <div class="panel-body">
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="panel-footer">
+                    Panel footer
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <!-- GRID -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        <u>tempor incididunt ut labore et dolore magna aliqua.</u>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        <u>tempor incididunt ut labore et dolore magna aliqua.</u>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        <u>tempor incididunt ut labore et dolore magna aliqua.</u>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        <u>tempor incididunt ut labore et dolore magna aliqua.</u>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        <u>tempor incididunt ut labore et dolore magna aliqua.</u>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        <u>tempor incididunt ut labore et dolore magna aliqua.</u>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        <u>tempor incididunt ut labore et dolore magna aliqua.</u>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        <u>tempor incididunt ut labore et dolore magna aliqua.</u>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron text-center">
+            <div class="container">
+                <h1 class="display-4">Welcome to my website!</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <hr class="my-4">
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
